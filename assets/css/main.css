@@ -793,39 +793,36 @@ section,
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+.skills-grid {
+  display: grid;
+  gap: 2rem;
 }
 
-.skills .progress .skill {
-  color: var(--heading-color);
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
+.skill-group h5 {
   font-weight: 600;
-  font-family: var(--heading-font);
+  margin-bottom: 10px;
+  color: #2c3e50;
 }
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
+.skill-badge {
+  display: inline-block;
+  margin: 5px 6px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  background-color: #e3f2fd;
+  color: #0d47a1;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+  border: 1px solid #90caf9;
 }
 
-.skills .progress-bar-wrap {
-  background: color-mix(in srgb, var(--default-color), transparent 90%);
-  height: 10px;
+.skill-badge:hover {
+  background-color: #bbdefb;
+  color: #0b3c91;
+  cursor: default;
 }
 
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: var(--accent-color);
-}
 
 /*--------------------------------------------------------------
 # Stats Section
